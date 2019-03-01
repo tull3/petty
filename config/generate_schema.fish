@@ -1,0 +1,1 @@
+dbicdump -o dump_directory=. Petty::Schema 'dbi:Pg:database=pagila;host=192.168.1.185;port=5432' 'postgres' '364462'

@@ -1,34 +1,112 @@
 #!/usr/bin/env perl
+
+use Mojo::Base -base;
 use Mojolicious::Lite;
-use LaunchApp::Model::Users;
-use IO::File;
+use Mojo::Pg;
+use lib '/home/will/Perl/petty/lib';
+use Petty::Model::Users;
 
 # Documentation browser under "/perldoc"
 plugin 'PODRenderer';
 
-my $userModel = LaunchApp::Model::Users->new();
-$userModel->print_dumper();
-
-get '/' => sub {
-  my $c = shift;
-  $c->render(template => 'index');
+helper db => sub {
+    state $db = Mojo::Pg->new('postgresql://will:364462@192.168.1.185:5432/yancy');
+    return $db;
 };
+
+app->db->auto_migrate(1)->migrations->from_data();
+
+plugin 'Yancy', {
+    backend => { Pg => app->db },
+    read_schema => 1,
+    collections => {
+        pages => {
+            'x-id-field' => 'path',
+            'x-list-columns' => [qw( path )],
+            'x-view-item-url' => '/{path}',
+            properties => {
+                id => {
+                    readOnly => 1,
+                },
+                markdown => {
+                    format => 'markdown',
+                    'x-html-field' => 'html',
+                },
+            },
+        },
+    },
+};
+
+get '/*id' => {
+    id => 'index', # Default to index page
+    controller => 'yancy',
+    action => 'get',
+    collection => 'pages',
+    template => 'pages',
+};
+
+# get '/' => sub {
+#  my $c = shift;
+#  $c->render(template => 'index');
+#};
 
 app->start;
 
-__END__
 __DATA__
 
-@@ index.html.ep
+@@ pages.html.ep
 % layout 'default';
-% title 'Welcome';
-<h1>Welcome to the Mojolicious real-time web framework!</h1>
-To learn more, you can browse through the documentation
-<%= link_to 'here' => '/perldoc' %>.
+%== $item->{html}
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
 <html>
-  <head><title><%= title %></title></head>
-  <body><%= content %></body>
+    <head>
+        <link rel="stylesheet" href="/yancy/bootstrap.css">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+                <a class="navbar-brand" href="/">Yancy</a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://metacpan.org/pod/Yancy">
+                                CPAN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/preaction/Yancy">
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://kiwiirc.com/nextclient/#irc://irc.perl.org/#yancy?nick=www-guest-?">
+                                Chat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
+        <main class="container">
+            <%= content %>
+        </main>
+        %= javascript '/yancy/jquery.js'
+        %= javascript '/yancy/popper.js'
+        %= javascript '/yancy/bootstrap.js'
+    </body>
 </html>
+
+@@ migrations
+-- 1 up
+CREATE TABLE IF NOT EXISTS pages (
+    id SERIAL PRIMARY KEY,
+    path VARCHAR(250) UNIQUE NOT NULL,
+    markdown TEXT,
+    html TEXT
+);

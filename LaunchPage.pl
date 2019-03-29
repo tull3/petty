@@ -3,8 +3,11 @@
 use Mojo::Base -base;
 use Mojolicious::Lite;
 use Mojo::Pg;
+#use Mojo::JSON qw/decode_json encode_json/;
 use lib '/home/will/Perl/petty/lib';
 use Petty::Model::Users;
+use Petty::Schema;
+use Data::Dumper;
 
 # Documentation browser under "/perldoc"
 plugin 'PODRenderer';
@@ -37,7 +40,7 @@ plugin 'Yancy', {
     },
 };
 
-get '/*id' => {
+get '/yanciness/*id' => {
     id => 'index', # Default to index page
     controller => 'yancy',
     action => 'get',
@@ -45,10 +48,26 @@ get '/*id' => {
     template => 'pages',
 };
 
-# get '/' => sub {
-#  my $c = shift;
-#  $c->render(template => 'index');
-#};
+ get '/testing' => sub {
+     my $c = shift;
+     my $schema1 = Petty::Schema->connect(
+         'dbi:Pg:database=pagila;host=192.168.1.185;port=5432',
+         'postgres',
+         '364462',
+         { AutoCommit => 1 },
+     );
+     my @results = $schema1->resultset('Actor')->search(
+         {actor_id => [qw/1 2 3 4 5 6 7 8 9/]},
+         {columns => [qw/first_name last_name/]}
+     );
+#     say Dumper(\@resultSet);
+#     $c->stash(frameworks => $frameworks);
+     my @response;
+     foreach my $result (@results) {
+         push @response, {$result->get_columns};
+     }
+     $c->render(json => \@response);
+};
 
 app->start;
 
@@ -57,50 +76,6 @@ __DATA__
 @@ pages.html.ep
 % layout 'default';
 %== $item->{html}
-
-@@ layouts/default.html.ep
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="/yancy/bootstrap.css">
-        <title><%= title %></title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
-                <a class="navbar-brand" href="/">Yancy</a>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://metacpan.org/pod/Yancy">
-                                CPAN
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/preaction/Yancy">
-                                GitHub
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://kiwiirc.com/nextclient/#irc://irc.perl.org/#yancy?nick=www-guest-?">
-                                Chat
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </header>
-        <main class="container">
-            <%= content %>
-        </main>
-        %= javascript '/yancy/jquery.js'
-        %= javascript '/yancy/popper.js'
-        %= javascript '/yancy/bootstrap.js'
-    </body>
-</html>
 
 @@ migrations
 -- 1 up

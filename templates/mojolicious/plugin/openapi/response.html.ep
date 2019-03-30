@@ -1,0 +1,7 @@
+% for my $code (sort keys %{$op->{responses}}) {
+  % next if $code =~ $X_RE;
+  % my $res = $op->{responses}{$code};
+<h4 class="op-response">Response <%= $code %></h3>
+%= include "mojolicious/plugin/openapi/human", spec => $res
+<pre class="op-response"><%= $serialize->($res->{schema}) %></pre>
+% }

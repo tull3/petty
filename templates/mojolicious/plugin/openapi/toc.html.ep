@@ -1,0 +1,35 @@
+<ul id="toc">
+  % if ($spec->{info}{description}) {
+  <li><a href="#description">Description</a></li>
+  % }
+  % if ($spec->{info}{termsOfService}) {
+  <li><a href="#terms-of-service">Terms of service</a></li>
+  % }
+  <li>
+    <a href="#resources">Resources</a>
+    <ul>
+    % for my $path (sort { length $a <=> length $b } keys %{$spec->{paths}}) {
+      % next if $path =~ $X_RE;
+      % for my $method (sort keys %{$spec->{paths}{$path}}) {
+        % next if $method =~ $X_RE;
+        <li><a href="#op-<%= lc $method %><%= $esc->($path) %>"><span class="method"><%= uc $method %></span> <%= $spec->{basePath} %><%= $path %></h3>
+      % }
+    % }
+    </ul>
+  </li>
+  <li>
+    <a href="#references">References</a>
+    <ul>
+    % for my $key (sort { $a cmp $b } keys %{$spec->{definitions} || {}}) {
+      % next if $key =~ $X_RE;
+      <li><a href="#ref-definitions-<%= lc $esc->($key) %>">#/definitions/<%= $key %></a></li>
+    % }
+    % for my $key (sort { $a cmp $b } keys %{$spec->{parameters} || {}}) {
+      % next if $key =~ $X_RE;
+      <li><a href="#ref-parameters-<%= lc $esc->($key) %>">#/parameters/<%= $key %></a></li>
+    % }
+    </ul>
+  </li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>

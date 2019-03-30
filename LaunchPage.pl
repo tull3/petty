@@ -4,13 +4,13 @@ use Mojo::Base -base;
 use Mojolicious::Lite;
 use Mojo::Pg;
 #use Mojo::JSON qw/decode_json encode_json/;
-use lib '/home/will/Perl/petty/lib';
+use lib 'lib';
 use Petty::Model::Users;
 use Petty::Schema;
 use Data::Dumper;
 
 # Documentation browser under "/perldoc"
-plugin 'PODRenderer';
+# plugin 'PODRenderer';
 
 helper db => sub {
     state $db = Mojo::Pg->new('postgresql://will:364462@192.168.1.185:5432/yancy');

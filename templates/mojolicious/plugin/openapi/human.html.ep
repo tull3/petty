@@ -1,0 +1,9 @@
+% if ($spec->{summary}) {
+<p class="spec-summary"><%= $spec->{summary} %></p>
+% }
+% if ($spec->{description}) {
+<div class="spec-description"><%== $markdown->($spec->{description}) %></div>
+% }
+% if (!$spec->{description} and !$spec->{summary}) {
+<p class="op-summary op-doc-missing">This resource is not documented.</p>
+% }

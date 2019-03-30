@@ -1,0 +1,20 @@
+<h2 id="resources"><a href="#title">Resources</a></h2>
+
+% my $schemes = $spec->{schemes} || ["http"];
+% my $url = Mojo::URL->new("http://$spec->{host}");
+<h3 id="base-url"><a href="#title">Base URL</a></h3>
+<ul class="unstyled">
+% for my $scheme (@$schemes) {
+  % $url->scheme($scheme);
+  <li><a href="<%= $url %>"><%= $url %></a></li>
+% }
+</ul>
+
+% for my $path (sort { length $a <=> length $b } keys %{$spec->{paths}}) {
+  % next if $path =~ $X_RE;
+  % for my $http_method (sort keys %{$spec->{paths}{$path}}) {
+    % next if $http_method =~ $X_RE or $http_method eq 'parameters';
+    % my $op = $spec->{paths}{$path}{$http_method};
+    %= include "mojolicious/plugin/openapi/resource", method => $http_method, op => $op, path => $path
+  % }
+% }

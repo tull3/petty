@@ -1,0 +1,18 @@
+<h1 id="title"><%= $spec->{info}{title} || 'No title' %></h1>
+<p class="version"><span>Version</span> <span class="version"><%= $spec->{info}{version} %></span></p>
+
+%= include "mojolicious/plugin/openapi/toc"
+
+% if ($spec->{info}{description}) {
+<h2 id="description"><a href="#title">Description</a></h2>
+<div class="description">
+  %== $markdown->($spec->{info}{description})
+</div>
+% }
+
+% if ($spec->{info}{termsOfService}) {
+<h2 id="terms-of-service"><a href="#title">Terms of service</a></h2>
+<p class="terms-of-service">
+  %= $spec->{info}{termsOfService}
+</p>
+% }

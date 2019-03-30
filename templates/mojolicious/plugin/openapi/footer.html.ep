@@ -1,0 +1,15 @@
+% my $contact = $spec->{info}{contact};
+% my $license = $spec->{info}{license};
+<h2 id="license"><a href="#title">License</a></h2>
+% if ($license->{name}) {
+<p class="license"><a href="<%= $license->{url} || '' %>"><%= $license->{name} %></a></p>
+% } else {
+<p class="no-license">No license specified.</p>
+% }
+<h2 id="contact"<a href="#title">Contact information</a></h2>
+% if ($contact->{email}) {
+<p class="contact-email"><a href="mailto:<%= $contact->{email} %>"><%= $contact->{email} %></a></p>
+% }
+% if ($contact->{url}) {
+<p class="contact-url"><a href="mailto:<%= $contact->{url} %>"><%= $contact->{url} %></a></p>
+% }

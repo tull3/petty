@@ -1,0 +1,52 @@
+% use Mojo::ByteStream 'b';
+<h2 id="references"><a href="#title">References</a></h2>
+% for my $key (sort { $a cmp $b } keys %{$spec->{definitions} || {}}) {
+  % next if $key =~ $X_RE;
+  <h3 id="ref-definitions-<%= lc $esc->($key) %>"><a href="#title">#/definitions/<%= $key %></a></h3>
+  <pre class="ref"><%= $serialize->($spec->{definitions}{$key}) %></pre>
+% }
+% for my $key (sort { $a cmp $b } keys %{$spec->{parameters} || {}}) {
+  % next if $key =~ $X_RE;
+  % my $item = $spec->{parameters}{$key};
+  <h3 id="ref-parameters-<%= lc $esc->($key) %>"><a href="#title">#/parameters/<%= $key %> - "<%= $item->{name} %>"</a></h3>
+  <p><%= $item->{description} || 'No description.' %></p>
+  <ul>
+    <li>In: <%= $item->{in} %></li>
+    <li>Type: <%= $item->{type} %><%= $item->{format} ? " / $item->{format}" : "" %><%= $item->{pattern} ? " / $item->{pattern}" : ""%></li>
+    % if ($item->{exclusiveMinimum} || $item->{exclusiveMaximum} || $item->{minimum} || $item->{maximum}) {
+      <li>
+        Min / max:
+        <%= $item->{exclusiveMinimum} ? "$item->{exclusiveMinimum} <" : $item->{minimum} ? "$item->{minimum} <=" : b("&infin; <=") %>
+        value
+        <%= $item->{exclusiveMaximum} ? "< $item->{exclusiveMaximum}" : $item->{maximum} ? "<= $item->{maximum}" : b("<= &infin;") %>
+      </li>
+    % }
+    % if ($item->{minLength} || $item->{maxLength}) {
+      <li>
+        Min / max:
+        <%= $item->{minLength} ? "$item->{minLength} <=" : b("&infin; <=") %>
+        length
+        <%= $item->{maxLength} ? "<= $item->{maxLength}" : b("<= &infin;") %>
+      </li>
+    % }
+    % if ($item->{minItems} || $item->{maxItems}) {
+      <li>
+        Min / max:
+        <%= $item->{minItems} ? "$item->{minItems} <=" : b("&infin; <=") %>
+        items
+        <%= $item->{maxItems} ? "<= $item->{maxItems}" : b("<= &infin;") %>
+      </li>
+    % }
+    % for my $k (qw(collectionFormat uniqueItems multipleOf enum)) {
+      % next unless $item->{$k};
+      <li><%= ucfirst $k %>: <%= ref $item->{$k} ? $serialize->($item->{$k}) : $item->{$k} %></li>
+    % }
+    <li>Required: <%= $item->{required} ? 'Yes.' : 'No.' %></li>
+    <li><%= defined $item->{default} ? "Default: " . $serialize->($item->{default}) : 'No default value.' %></li>
+  </ul>
+  % for my $k (qw(items schema)) {
+    % next unless $item->{$k};
+    <pre class="ref"><%= $serialize->($item->{$k}) %></pre>
+  % }
+% }
+

@@ -1,0 +1,10 @@
+<h3 id="op-<%= lc $method %><%= $esc->($path) %>" class="op-path <%= $op->{deprecated} ? "deprecated" : "" %>"><a href="#title"><%= uc $method %> <%= $spec->{basePath} %><%= $path %></a></h3>
+% if ($op->{deprecated}) {
+<p class="op-deprecated">This resource is deprecated!</p>
+% }
+% if ($op->{operationId}) {
+<p class="op-id"><b>Operation ID:</b> <span><%= $op->{operationId} %></span></p>
+% }
+%= include "mojolicious/plugin/openapi/human", spec => $op
+%= include "mojolicious/plugin/openapi/parameters", op => $op
+%= include "mojolicious/plugin/openapi/response", op => $op

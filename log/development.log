@@ -220,3 +220,27 @@
 [2019-03-30 22:57:15.84426] [23641] [debug] Rendering cached template "protected.html.ep" from DATA section
 [2019-03-30 22:57:15.84535] [23641] [debug] Rendering cached template "layouts/default.html.ep"
 [2019-03-30 22:57:15.84734] [23641] [debug] 200 OK (0.00459s, 217.865/s)
+[2019-03-31 10:58:57.10323] [23786] [info] Listening at "http://*:3000"
+[2019-03-31 10:59:05.79197] [23786] [debug] GET "/" (b3266a58)
+[2019-03-31 10:59:05.79378] [23786] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 10:59:05.79436] [23786] [debug] Template "not_found.html.ep" not found
+[2019-03-31 10:59:05.79455] [23786] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 10:59:05.83447] [23786] [debug] 404 Not Found (0.04248s, 23.540/s)
+[2019-03-31 10:59:12.33464] [23786] [debug] GET "/login" (7ab0ef52)
+[2019-03-31 10:59:12.33503] [23786] [debug] Routing to a callback
+[2019-03-31 10:59:12.33559] [23786] [debug] Rendering template "index.html.ep" from DATA section
+[2019-03-31 10:59:12.33770] [23786] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 10:59:12.34095] [23786] [debug] 200 OK (0.006278s, 159.286/s)
+[2019-03-31 10:59:17.56474] [23786] [debug] GET "/login" (52077aac)
+[2019-03-31 10:59:17.56504] [23786] [debug] Routing to a callback
+[2019-03-31 10:59:17.56551] [23786] [debug] Rendering cached template "index.html.ep" from DATA section
+[2019-03-31 10:59:17.56624] [23786] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 10:59:17.56697] [23786] [debug] 200 OK (0.002213s, 451.875/s)
+[2019-03-31 10:59:23.38086] [23786] [debug] GET "/login" (ee5fede1)
+[2019-03-31 10:59:23.38114] [23786] [debug] Routing to a callback
+[2019-03-31 10:59:23.38182] [23786] [debug] 302 Found (0.000943s, 1060.445/s)
+[2019-03-31 10:59:23.40322] [23786] [debug] GET "/protected" (3aa18d5b)
+[2019-03-31 10:59:23.40362] [23786] [debug] Routing to a callback
+[2019-03-31 10:59:23.40416] [23786] [debug] Rendering template "protected.html.ep" from DATA section
+[2019-03-31 10:59:23.40545] [23786] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 10:59:23.40617] [23786] [debug] 200 OK (0.002953s, 338.639/s)

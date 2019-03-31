@@ -1,0 +1,222 @@
+[2019-03-30 14:17:30.53110] [16522] [info] Listening at "http://*:3000"
+[2019-03-30 14:17:44.48071] [16522] [debug] GET "/" (1b8bb8f7)
+[2019-03-30 14:17:44.48404] [16522] [debug] Template "not_found.development.html.ep" not found
+[2019-03-30 14:17:44.48456] [16522] [debug] Template "not_found.html.ep" not found
+[2019-03-30 14:17:44.48490] [16522] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-30 14:17:44.53082] [16522] [debug] Your secret passphrase needs to be changed
+[2019-03-30 14:17:44.56672] [16522] [debug] 404 Not Found (0.085976s, 11.631/s)
+[2019-03-30 14:18:04.63011] [16522] [debug] GET "/testing" (075d6f72)
+[2019-03-30 14:18:04.63080] [16522] [debug] Routing to a callback
+[2019-03-30 14:18:04.84839] [16522] [debug] 200 OK (0.218198s, 4.583/s)
+[2019-03-30 14:18:14.72672] [16522] [debug] GET "/yanciness/" (1bd22ea0)
+[2019-03-30 14:18:14.73212] [16522] [debug] Routing to controller "Yancy::Controller::Yancy" and action "get"
+[2019-03-30 14:18:14.73941] [16522] [debug] Rendering template "pages.html.ep"
+[2019-03-30 14:18:14.74138] [16522] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-30 14:18:14.92381] [16522] [debug] 200 OK (0.197041s, 5.075/s)
+[2019-03-30 14:29:24.42894] [16917] [debug] GET "/index" (9f90d66d)
+[2019-03-30 14:29:24.43247] [16917] [debug] Template "not_found.development.html.ep" not found
+[2019-03-30 14:29:24.43579] [16917] [debug] Template "not_found.html.ep" not found
+[2019-03-30 14:29:24.43641] [16917] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-30 14:29:24.48238] [16917] [debug] Your secret passphrase needs to be changed
+[2019-03-30 14:29:24.51745] [16917] [debug] 404 Not Found (0.088505s, 11.299/s)
+[2019-03-30 15:11:53.93163] [16917] [debug] GET "/yancy/api" (31e34484)
+[2019-03-30 15:11:53.93260] [16917] [debug] Routing to a callback
+[2019-03-30 15:11:53.94055] [16917] [debug] 200 OK (0.008858s, 112.892/s)
+[2019-03-30 22:29:01.50738] [23111] [info] Listening at "http://*:3000"
+[2019-03-30 22:29:35.50912] [23111] [debug] GET "/" (17c7fb6a)
+[2019-03-30 22:29:35.51016] [23111] [debug] Routing to a callback
+[2019-03-30 22:29:35.51189] [23111] [error] Can't locate object method "slurp" via package "lib/Petty/Model/../../../config/users.json" (perhaps you forgot to load "lib/Petty/Model/../../../config/users.json"?) at lib/Petty/Model/Users.pm line 28.
+
+[2019-03-30 22:29:35.51401] [23111] [debug] Template "exception.development.html.ep" not found
+[2019-03-30 22:29:35.51461] [23111] [debug] Template "exception.html.ep" not found
+[2019-03-30 22:29:35.51501] [23111] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-30 22:29:35.58323] [23111] [debug] 500 Internal Server Error (0.074099s, 13.495/s)
+[2019-03-30 22:30:11.19489] [23182] [info] Listening at "http://*:3000"
+[2019-03-30 22:30:15.88338] [23182] [debug] GET "/" (a5653373)
+[2019-03-30 22:30:15.88442] [23182] [debug] Routing to a callback
+[2019-03-30 22:30:15.88624] [23182] [error] Can't locate object method "slurp" via package "lib/Petty/Model/../../../config/users.json" (perhaps you forgot to load "lib/Petty/Model/../../../config/users.json"?) at lib/Petty/Model/Users.pm line 28.
+
+[2019-03-30 22:30:15.88772] [23182] [debug] Template "exception.development.html.ep" not found
+[2019-03-30 22:30:15.88811] [23182] [debug] Template "exception.html.ep" not found
+[2019-03-30 22:30:15.88834] [23182] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-30 22:30:15.95791] [23182] [debug] 500 Internal Server Error (0.074469s, 13.428/s)
+[2019-03-30 22:43:37.07585] [23352] [info] Listening at "http://*:3000"
+[2019-03-30 22:43:48.67106] [23352] [debug] GET "/" (ce5e1623)
+[2019-03-30 22:43:48.67208] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:48.67435] [23352] [debug] 302 Found (0.003267s, 306.091/s)
+[2019-03-30 22:43:48.74837] [23352] [debug] GET "/protected" (da77e394)
+[2019-03-30 22:43:48.74936] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:48.75065] [23352] [debug] 302 Found (0.002246s, 445.236/s)
+[2019-03-30 22:43:48.84254] [23352] [debug] GET "/" (38499a36)
+[2019-03-30 22:43:48.84308] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:48.84522] [23352] [debug] 302 Found (0.002628s, 380.518/s)
+[2019-03-30 22:43:48.90359] [23352] [debug] GET "/protected" (9341ee90)
+[2019-03-30 22:43:48.90404] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:48.90511] [23352] [debug] 302 Found (0.001488s, 672.043/s)
+[2019-03-30 22:43:48.99939] [23352] [debug] GET "/" (93a8a3c4)
+[2019-03-30 22:43:48.99988] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.00163] [23352] [debug] 302 Found (0.002193s, 455.996/s)
+[2019-03-30 22:43:49.11749] [23352] [debug] GET "/protected" (5fb80955)
+[2019-03-30 22:43:49.11795] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.11935] [23352] [debug] 302 Found (0.001828s, 547.046/s)
+[2019-03-30 22:43:49.25444] [23352] [debug] GET "/" (967a4278)
+[2019-03-30 22:43:49.25485] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.25631] [23352] [debug] 302 Found (0.001831s, 546.150/s)
+[2019-03-30 22:43:49.29966] [23352] [debug] GET "/protected" (5df84656)
+[2019-03-30 22:43:49.30010] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.30117] [23352] [debug] 302 Found (0.001473s, 678.887/s)
+[2019-03-30 22:43:49.45908] [23352] [debug] GET "/" (e2494e06)
+[2019-03-30 22:43:49.45958] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.46147] [23352] [debug] 302 Found (0.002346s, 426.257/s)
+[2019-03-30 22:43:49.50009] [23352] [debug] GET "/protected" (6a2f2331)
+[2019-03-30 22:43:49.50048] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.50130] [23352] [debug] 302 Found (0.001177s, 849.618/s)
+[2019-03-30 22:43:49.61638] [23352] [debug] GET "/" (3a085029)
+[2019-03-30 22:43:49.61703] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.61917] [23352] [debug] 302 Found (0.002732s, 366.032/s)
+[2019-03-30 22:43:49.72714] [23352] [debug] GET "/protected" (eaae771c)
+[2019-03-30 22:43:49.72765] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.72882] [23352] [debug] 302 Found (0.001644s, 608.273/s)
+[2019-03-30 22:43:49.82464] [23352] [debug] GET "/" (9c591e01)
+[2019-03-30 22:43:49.82507] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.82679] [23352] [debug] 302 Found (0.002112s, 473.485/s)
+[2019-03-30 22:43:49.86766] [23352] [debug] GET "/protected" (1d484fe3)
+[2019-03-30 22:43:49.86809] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.86911] [23352] [debug] 302 Found (0.001415s, 706.714/s)
+[2019-03-30 22:43:49.94691] [23352] [debug] GET "/" (e1b187d8)
+[2019-03-30 22:43:49.94741] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.94932] [23352] [debug] 302 Found (0.002369s, 422.119/s)
+[2019-03-30 22:43:49.99150] [23352] [debug] GET "/protected" (ae29c592)
+[2019-03-30 22:43:49.99193] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:49.99297] [23352] [debug] 302 Found (0.001438s, 695.410/s)
+[2019-03-30 22:43:50.08205] [23352] [debug] GET "/" (5ff6654d)
+[2019-03-30 22:43:50.08246] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:50.08411] [23352] [debug] 302 Found (0.002014s, 496.524/s)
+[2019-03-30 22:43:50.11661] [23352] [debug] GET "/protected" (4c912e59)
+[2019-03-30 22:43:50.11709] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:50.11846] [23352] [debug] 302 Found (0.001799s, 555.864/s)
+[2019-03-30 22:43:50.23044] [23352] [debug] GET "/" (5eeed601)
+[2019-03-30 22:43:50.23098] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:50.23467] [23352] [debug] 302 Found (0.004175s, 239.521/s)
+[2019-03-30 22:43:50.31009] [23352] [debug] GET "/protected" (2fcb33bd)
+[2019-03-30 22:43:50.31057] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:50.31165] [23352] [debug] 302 Found (0.001523s, 656.599/s)
+[2019-03-30 22:43:50.34719] [23352] [debug] GET "/" (08adffc2)
+[2019-03-30 22:43:50.34765] [23352] [debug] Routing to a callback
+[2019-03-30 22:43:50.34945] [23352] [debug] 302 Found (0.002215s, 451.467/s)
+[2019-03-30 22:45:52.34044] [23438] [info] Listening at "http://*:3000"
+[2019-03-30 22:45:57.82352] [23438] [debug] GET "/" (d1fef9f2)
+[2019-03-30 22:45:57.82474] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:57.82636] [23438] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:45:57.82656] [23438] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:45:57.82713] [23438] [debug] 302 Found (0.003632s, 275.330/s)
+[2019-03-30 22:45:57.93077] [23438] [debug] GET "/protected" (1aa15bfd)
+[2019-03-30 22:45:57.93180] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:57.93307] [23438] [debug] 302 Found (0.002255s, 443.459/s)
+[2019-03-30 22:45:57.96518] [23438] [debug] GET "/" (b9032ef0)
+[2019-03-30 22:45:57.96558] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:57.96739] [23438] [debug] 302 Found (0.002174s, 459.982/s)
+[2019-03-30 22:45:57.99671] [23438] [debug] GET "/protected" (f261b6dd)
+[2019-03-30 22:45:57.99711] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:57.99817] [23438] [debug] 302 Found (0.001413s, 707.714/s)
+[2019-03-30 22:45:58.09080] [23438] [debug] GET "/" (1f638ee3)
+[2019-03-30 22:45:58.09123] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.09293] [23438] [debug] 302 Found (0.002087s, 479.157/s)
+[2019-03-30 22:45:58.12464] [23438] [debug] GET "/protected" (1da174bd)
+[2019-03-30 22:45:58.12510] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.12628] [23438] [debug] 302 Found (0.001597s, 626.174/s)
+[2019-03-30 22:45:58.23144] [23438] [debug] GET "/" (9b01137e)
+[2019-03-30 22:45:58.23188] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.23366] [23438] [debug] 302 Found (0.002185s, 457.666/s)
+[2019-03-30 22:45:58.36820] [23438] [debug] GET "/protected" (622f89c8)
+[2019-03-30 22:45:58.36872] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.37117] [23438] [debug] 302 Found (0.002912s, 343.407/s)
+[2019-03-30 22:45:58.47632] [23438] [debug] GET "/" (eca1005a)
+[2019-03-30 22:45:58.47682] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.48006] [23438] [debug] 302 Found (0.003677s, 271.961/s)
+[2019-03-30 22:45:58.56684] [23438] [debug] GET "/protected" (67464f6f)
+[2019-03-30 22:45:58.56741] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.56866] [23438] [debug] 302 Found (0.001781s, 561.482/s)
+[2019-03-30 22:45:58.60272] [23438] [debug] GET "/" (b9c27e1d)
+[2019-03-30 22:45:58.60318] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.60509] [23438] [debug] 302 Found (0.002335s, 428.266/s)
+[2019-03-30 22:45:58.68650] [23438] [debug] GET "/protected" (951798cb)
+[2019-03-30 22:45:58.68708] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.68805] [23438] [debug] 302 Found (0.001525s, 655.738/s)
+[2019-03-30 22:45:58.71846] [23438] [debug] GET "/" (c0b79d49)
+[2019-03-30 22:45:58.71887] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.72089] [23438] [debug] 302 Found (0.002386s, 419.111/s)
+[2019-03-30 22:45:58.82933] [23438] [debug] GET "/protected" (313a1848)
+[2019-03-30 22:45:58.83011] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.83119] [23438] [debug] 302 Found (0.001834s, 545.256/s)
+[2019-03-30 22:45:58.87507] [23438] [debug] GET "/" (d365718d)
+[2019-03-30 22:45:58.87550] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.87768] [23438] [debug] 302 Found (0.002558s, 390.930/s)
+[2019-03-30 22:45:58.96949] [23438] [debug] GET "/protected" (4453a223)
+[2019-03-30 22:45:58.96998] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:58.97095] [23438] [debug] 302 Found (0.001437s, 695.894/s)
+[2019-03-30 22:45:59.00116] [23438] [debug] GET "/" (143eec8a)
+[2019-03-30 22:45:59.00161] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:59.00360] [23438] [debug] 302 Found (0.002394s, 417.711/s)
+[2019-03-30 22:45:59.09292] [23438] [debug] GET "/protected" (46a4c337)
+[2019-03-30 22:45:59.09332] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:59.09427] [23438] [debug] 302 Found (0.001316s, 759.878/s)
+[2019-03-30 22:45:59.12472] [23438] [debug] GET "/" (f0ffa2b5)
+[2019-03-30 22:45:59.12524] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:59.12712] [23438] [debug] 302 Found (0.002366s, 422.654/s)
+[2019-03-30 22:45:59.21426] [23438] [debug] GET "/protected" (f1f8f19f)
+[2019-03-30 22:45:59.21471] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:59.21566] [23438] [debug] 302 Found (0.001365s, 732.601/s)
+[2019-03-30 22:45:59.24616] [23438] [debug] GET "/" (debb717d)
+[2019-03-30 22:45:59.24656] [23438] [debug] Routing to a callback
+[2019-03-30 22:45:59.24826] [23438] [debug] 302 Found (0.002059s, 485.673/s)
+[2019-03-30 22:56:05.87394] [23641] [info] Listening at "http://*:3000"
+[2019-03-30 22:56:10.49810] [23641] [debug] GET "/" (d16bf549)
+[2019-03-30 22:56:10.50116] [23641] [debug] Template "not_found.development.html.ep" not found
+[2019-03-30 22:56:10.50168] [23641] [debug] Template "not_found.html.ep" not found
+[2019-03-30 22:56:10.50205] [23641] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-30 22:56:10.53450] [23641] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:56:10.56502] [23641] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:56:10.56865] [23641] [debug] 404 Not Found (0.070525s, 14.179/s)
+[2019-03-30 22:56:18.15037] [23641] [debug] GET "/login" (1c9cd766)
+[2019-03-30 22:56:18.15157] [23641] [debug] Routing to a callback
+[2019-03-30 22:56:18.15303] [23641] [debug] Rendering template "index.html.ep" from DATA section
+[2019-03-30 22:56:18.15739] [23641] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:56:18.15817] [23641] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-30 22:56:18.16250] [23641] [debug] 200 OK (0.012108s, 82.590/s)
+[2019-03-30 22:56:35.63870] [23641] [debug] GET "/login" (72a7e5a9)
+[2019-03-30 22:56:35.63961] [23641] [debug] Routing to a callback
+[2019-03-30 22:56:35.64081] [23641] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:56:35.64113] [23641] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-30 22:56:35.64190] [23641] [debug] 302 Found (0.003132s, 319.285/s)
+[2019-03-30 22:56:35.68148] [23641] [debug] GET "/protected" (a6fb071f)
+[2019-03-30 22:56:35.68244] [23641] [debug] Routing to a callback
+[2019-03-30 22:56:35.68391] [23641] [debug] Rendering template "protected.html.ep" from DATA section
+[2019-03-30 22:56:35.68715] [23641] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-30 22:56:35.68879] [23641] [debug] 200 OK (0.007284s, 137.287/s)
+[2019-03-30 22:56:53.50433] [23641] [debug] GET "/logout" (d2fff9ac)
+[2019-03-30 22:56:53.50499] [23641] [debug] Routing to a callback
+[2019-03-30 22:56:53.50575] [23641] [debug] 302 Found (0.00139s, 719.424/s)
+[2019-03-30 22:56:53.55106] [23641] [debug] GET "/login" (8d52fbde)
+[2019-03-30 22:56:53.55152] [23641] [debug] Routing to a callback
+[2019-03-30 22:56:53.55287] [23641] [debug] Rendering cached template "index.html.ep" from DATA section
+[2019-03-30 22:56:53.55466] [23641] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-30 22:56:53.55649] [23641] [debug] 200 OK (0.005395s, 185.357/s)
+[2019-03-30 22:57:01.89265] [23641] [debug] GET "/login" (6bd04b64)
+[2019-03-30 22:57:01.89361] [23641] [debug] Routing to a callback
+[2019-03-30 22:57:01.89476] [23641] [debug] Rendering cached template "index.html.ep" from DATA section
+[2019-03-30 22:57:01.89643] [23641] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-30 22:57:01.89838] [23641] [debug] 200 OK (0.005687s, 175.840/s)
+[2019-03-30 22:57:04.65986] [23641] [debug] GET "/login" (498e29fd)
+[2019-03-30 22:57:04.66043] [23641] [debug] Routing to a callback
+[2019-03-30 22:57:04.66149] [23641] [debug] Rendering cached template "index.html.ep" from DATA section
+[2019-03-30 22:57:04.66309] [23641] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-30 22:57:04.66472] [23641] [debug] 200 OK (0.004832s, 206.954/s)
+[2019-03-30 22:57:15.80181] [23641] [debug] GET "/login" (9d810b98)
+[2019-03-30 22:57:15.80239] [23641] [debug] Routing to a callback
+[2019-03-30 22:57:15.80389] [23641] [debug] 302 Found (0.00204s, 490.196/s)
+[2019-03-30 22:57:15.84271] [23641] [debug] GET "/protected" (88ae5531)
+[2019-03-30 22:57:15.84320] [23641] [debug] Routing to a callback
+[2019-03-30 22:57:15.84426] [23641] [debug] Rendering cached template "protected.html.ep" from DATA section
+[2019-03-30 22:57:15.84535] [23641] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-30 22:57:15.84734] [23641] [debug] 200 OK (0.00459s, 217.865/s)

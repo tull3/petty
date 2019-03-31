@@ -4,20 +4,29 @@ use Mojo::Base -base;
 use Mojolicious::Lite;
 use Mojo::Pg;
 #use Mojo::JSON qw/decode_json encode_json/;
-use lib 'lib';
+use Mojo::File qw/path/;
+use lib path(__FILE__)->dirname() . '/lib';
 use Petty::Model::Users;
 use Petty::Schema;
 use Data::Dumper;
+use Data::UUID;
 
 # Documentation browser under "/perldoc"
 # plugin 'PODRenderer';
+
+helper uuidGen => sub {
+    state $ug = Data::UUID->new();
+    return $ug;
+};
+
+app->secrets([app->uuidGen->create()]);
 
 helper db => sub {
     state $db = Mojo::Pg->new('postgresql://will:364462@192.168.1.185:5432/yancy');
     return $db;
 };
 
-app->db->auto_migrate(1)->migrations->from_data();
+# app->db->auto_migrate(1)->migrations->from_data();
 
 plugin 'Yancy', {
     backend => { Pg => app->db },
@@ -38,6 +47,53 @@ plugin 'Yancy', {
             },
         },
     },
+};
+
+any '/login' => sub {
+    my $c = shift;
+
+    # Query or POST parameters
+    my $user = $c->param('user') || '';
+    my $pass = $c->param('pass') || '';
+
+    my $userObj = Petty::Model::Users->new({ userName => $user, password => $pass });
+
+    # Check password and render "index.html.ep" if necessary
+    return $c->render unless $userObj->authenticate();
+
+    # Store username in session
+    $c->session(user => $userObj->userName());
+
+    # Store a friendly message for the next page in flash
+    $c->flash(message => 'Thanks for logging in.');
+
+    # Redirect to protected page with a 302 response
+    $c->redirect_to('protected');
+} => 'index';
+
+# Make sure user is logged in for actions in this group
+group {
+    under sub {
+        my $c = shift;
+
+        # Redirect to main page with a 302 response if user is not logged in
+        return 1 if $c->session('user');
+        $c->redirect_to('index');
+        return undef;
+    };
+
+    # A protected page auto rendering "protected.html.ep"
+    get '/protected';
+};
+
+get '/logout' => sub {
+    my $c = shift;
+
+    # Expire and in turn clear session automatically
+    $c->session(expires => 1);
+
+    # Redirect to main page with a 302 response
+    $c->redirect_to('index');
 };
 
 get '/yanciness/*id' => {
@@ -73,9 +129,27 @@ app->start;
 
 __DATA__
 
-@@ pages.html.ep
+@@ index.html.ep
 % layout 'default';
-%== $item->{html}
+%= form_for index => begin
+  % if (param 'user') {
+    <b>Wrong name or password, please try again.</b><br>
+  % }
+  Name:<br>
+  %= text_field 'user'
+  <br>Password:<br>
+  %= password_field 'pass'
+  <br>
+  %= submit_button 'Login'
+% end
+
+@@ protected.html.ep
+% layout 'default';
+% if (my $msg = flash 'message') {
+  <b><%= $msg %></b><br>
+% }
+Welcome <%= session 'user' %>.<br>
+%= link_to Logout => 'logout'
 
 @@ migrations
 -- 1 up

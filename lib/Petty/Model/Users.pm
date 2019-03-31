@@ -4,22 +4,33 @@ use Mojo::Util qw(secure_compare);
 use Mojo::JSON qw(decode_json);
 use Mojo::File qw(path);
 use Data::Dumper;
-use Mojo::Base -base;
+use Moose;
+use Function::Parameters;
+use namespace::autoclean;
 
-my $users;
+# use constant USER_FILE = path(__FILE__)->dirname() . '/../../../config/users.json';
 
-sub new {
+has 'userName' => (
+    is       => 'ro',
+    isa      => 'Str',
+    required => 1
+);
+
+has 'password' => (
+    is       => 'ro',
+    isa      => 'Str',
+    required => 1
+);
+
+sub authenticate {
     my $self = shift;
-    my $configFile = path('< config/users.json');
-    my $jsonString = $configFile->slurp;
-    my $configValues = decode_json($jsonString);
-    bless { user => $configValues->{user},
-        passwd => $configValues->{passwd} }, $self;
+    my $userFile = path(path(__FILE__)->dirname() . '/../../../config/users.json');
+    my $users = decode_json($userFile->slurp());
+    return 0 unless ($self->userName() && $self->password());
+    return 1 if secure_compare($users->{$self->userName()}->{password}, $self->password());
+    return 0;
 }
 
-sub print_dumper {
-    my $self = shift;
-    print Dumper($self);
-}
+__PACKAGE__->meta->make_immutable;
 
-1;
+return 1;

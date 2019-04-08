@@ -1,6 +1,10 @@
-package Login;
+package Petty::Controller::Login;
 
 use Mojo::Base 'Mojolicious::Controller';
+use Mojo::File qw/path/;
+use lib path(__FILE__)->dirname() . '/../../../lib';
+use Petty::Model::Users;
+use Mojo::Util qw/dumper/;
 
 sub index {
     my $self = shift;
@@ -16,6 +20,8 @@ sub index {
 
     # Store username in session
     $self->session(user => $userObj->userName());
+
+    say dumper $self->session();
 
     # Store a friendly message for the next page in flash
     $self->flash(message => 'Thanks for logging in.');

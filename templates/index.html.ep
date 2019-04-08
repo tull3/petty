@@ -1,12 +1,137 @@
-% layout 'default';
-%= form_for index => begin
-% if (param 'user') {
-<b>Wrong name or password, please try again.</b><br>
-% }
-Name:<br>
-%= text_field 'user'
-<br>Password:<br>
-%= password_field 'pass'
-<br>
-%= submit_button 'Login'
-% end
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Launch Page</title>
+        <link href="css/singlePage.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="fixed">
+                <p class="domain">tull.digital</p>
+                <p class="name">William Jackson</p>
+            </header>
+            <div class="spacer"></div>
+            <section class="hero">
+                <h2 class="hero_header">Programmer</h2>
+                <p class="tagline">South Carolina</p>
+            </section>
+            <div class="banner">
+                <div class="tab_header">
+                    <button class="tab_button" onclick="openTab('Scripting')" id="Scripting_button">
+                        System
+                    </button>
+                    <button class="tab_button" onclick="openTab('Data')" id="Data_button">
+                        Database
+                    </button>
+                    <button class="tab_button" onclick="openTab('Web')" id="Web_button">
+                        Web & App
+                    </button>
+                </div>
+                <div class="tab" id="Scripting">
+                    <h2>System Programming</h2>
+                    <p>
+                        Linux has been an obsession since the beginning.
+                        When I'm faced with such a powerful and flexible platform,
+                        I tend to want to see what I can do with it.
+                        But that goes for any tool.<br/>
+                        <br/>
+                    </p>
+                    <h4>Linux | Bash | Awk | Perl | Rsync | CentOS | Ubuntu | openSUSE | PowerShell</h4>
+                </div>
+                <div class="tab" id="Data" style="display: none">
+                    <h2>Database Administration</h2>
+                    <p>
+                        Getting to work with valuable real-world data is always a treat, and I welcome the challenge of
+                        making it secure, accessible, measurable, and accurate.<br/>
+                        <br/>
+                    </p>
+                    <h4>MySQL | PostgreSQL | SQL | Derby | JDBC | DBI</h4>
+                </div>
+                <div class="tab" id="Web" style="display: none">
+                    <h2>App & Web Development</h2>
+                    <p>
+                        I've always used my domain to hone my skills, and recently that's meant Perl.
+                        With a dash of JavaScript.  After cutting my teeth on the object-oriented world of Java,
+                        functional programming is the perfect compliment.<br/>
+                        <br/>
+                    </p>
+                    <h4>Perl | Java | JavaScript | Tomcat | Nginx | Apache | Wicket | Mojolicious</h4>
+                </div>
+            </div>
+            <div class="spacer"></div>
+                <div class="text_column">
+                    <div class="text_column2">
+                        <p>&quot;What greater wealth is there than to own your life and to spend it on growing?&quot;</p>
+                    </div>
+                    <div class="parallax">
+                        <!-- <h2>PASSION</h2> -->
+                        <p>
+                            - Ayn Rand
+                        </p>
+                    </div>
+                </div>
+            <div class="spacer"></div>
+            <footer>
+                <div class="footer_column">
+                    <div class="button">
+                        <a href="http://project.tull.digital">The Tull Project</a>
+                    </div>
+                    <p>
+                        This one runs on Java.
+                    </p>
+                </div>
+                <div class="footer_column">
+                    <div class="button">
+                        <a href="mailto:william@tull.digital" target="_top">E-mail Me</a>
+                    </div>
+                    <p>Tried and true.</p>
+                </div>
+                <div class="footer_column">
+                    <div class="button">
+                        <a href="http://www.linkedin.com/in/tulldigital" target="_top">LinkedIn</a>
+                    </div>
+                    <p>
+                        Customary.  And fun.
+                    </p>
+                </div>
+                <div class="footer_column">
+                    <div class="button">
+                        <a href="http://github.com/tull3" target="_top">GitHub</a>
+                    </div>
+                    <p>
+                        Odds and ends.
+                    </p>
+                </div>
+            </footer>  
+            <div class="spacer"></div>
+            <section class="footer_banner">
+                <div class="copyright">&copy;William Jackson 2018</div>
+                <div class="perl">Server and site built using Perl 5.</div>
+            </section>
+        </div>
+        <script>
+            function getRuleProperty(element, styleName) {
+                var property;
+                var cssRules = document.styleSheets[0].cssRules;
+                for (var i = 0; i < cssRules.length; i++) {
+                    if (cssRules[i].selectorText === element) {
+                        return cssRules[i].style[styleName];
+                    }
+                }
+            }
+            function openTab(tabName) {
+                var tabs = document.getElementsByClassName("tab");
+                var buttons = document.getElementsByClassName("tab_button");
+                var defaultColor = getRuleProperty('.tab_button', 'background-color');
+                for (var i = 0; i < buttons.length; i++) {
+                    tabs[i].style.display = "none";
+                }
+                var button = `${tabName}_button`;
+                document.getElementById(tabName).style.display = "block";
+            }
+        </script>
+    </body>
+</html>

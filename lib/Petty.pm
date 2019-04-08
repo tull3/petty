@@ -3,6 +3,7 @@ package Petty;
 use Mojo::Base 'Mojolicious';
 use Mojo::File qw/path/;
 use lib path(__FILE__)->dirname() . '/lib';
+use Mojo::Pg;
 use Petty::Model::Users;
 use Petty::Schema;
 use Data::Dumper;
@@ -16,7 +17,7 @@ sub startup {
         return $ug;
     });
 
-    $self->secrets([ app->uuidGen->create() ]);
+    $self->secrets([ $self->uuidGen->create() ]);
 
     $self->helper(db => sub {
         state $db = Mojo::Pg->new('postgresql://will:364462@192.168.1.185:5432/yancy');
@@ -24,7 +25,7 @@ sub startup {
     });
 
     $self->plugin('Yancy', {
-        backend     => { Pg => app->db },
+        backend     => { Pg => $self->db },
         read_schema => 1,
         collections => {
             pages => {
@@ -56,10 +57,10 @@ sub startup {
 
     $r->get('/yanciness/*id' => sub {
         id => 'index', # Default to index page
-            controller => 'yancy',
-            action => 'get',
-            collection => 'pages',
-            template => 'pages'
+        controller => 'yancy',
+        action => 'get',
+        collection => 'pages',
+        template => 'pages'
     });
 
     $r->get('/testing' => sub {
@@ -88,28 +89,6 @@ sub startup {
 1;
 
 __DATA__
-
-@@ index.html.ep
-% layout 'default';
-%= form_for index => begin
-  % if (param 'user') {
-    <b>Wrong name or password, please try again.</b><br>
-  % }
-  Name:<br>
-  %= text_field 'user'
-  <br>Password:<br>
-  %= password_field 'pass'
-  <br>
-  %= submit_button 'Login'
-% end
-
-@@ protected.html.ep
-% layout 'default';
-% if (my $msg = flash 'message') {
-  <b><%= $msg %></b><br>
-% }
-Welcome <%= session 'user' %>.<br>
-%= link_to Logout => 'logout'
 
 @@ migrations
 -- 1 up

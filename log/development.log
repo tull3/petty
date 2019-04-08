@@ -244,3 +244,331 @@
 [2019-03-31 10:59:23.40416] [23786] [debug] Rendering template "protected.html.ep" from DATA section
 [2019-03-31 10:59:23.40545] [23786] [debug] Rendering cached template "layouts/default.html.ep"
 [2019-03-31 10:59:23.40617] [23786] [debug] 200 OK (0.002953s, 338.639/s)
+[2019-03-31 15:51:53.46802] [30889] [info] Listening at "http://*:3000"
+[2019-03-31 15:52:08.72162] [30889] [debug] GET "/" (e65212ed)
+[2019-03-31 15:52:08.72479] [30889] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 15:52:08.72687] [30889] [debug] Template "login/index.html.ep" not found
+[2019-03-31 15:52:08.72749] [30889] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 15:52:08.72780] [30889] [debug] Template "not_found.html.ep" not found
+[2019-03-31 15:52:08.72808] [30889] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 15:52:08.80763] [30889] [debug] 404 Not Found (0.085979s, 11.631/s)
+[2019-03-31 15:52:20.44137] [30889] [debug] GET "/login" (9bf1fca5)
+[2019-03-31 15:52:20.44338] [30889] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 15:52:20.44392] [30889] [debug] Template "not_found.html.ep" not found
+[2019-03-31 15:52:20.44425] [30889] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 15:52:20.48512] [30889] [debug] 404 Not Found (0.043728s, 22.869/s)
+[2019-03-31 15:52:36.52721] [30889] [debug] GET "/" (698f2931)
+[2019-03-31 15:52:36.52778] [30889] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 15:52:36.52823] [30889] [debug] Template "login/index.html.ep" not found
+[2019-03-31 15:52:36.52852] [30889] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 15:52:36.52877] [30889] [debug] Template "not_found.html.ep" not found
+[2019-03-31 15:52:36.52898] [30889] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 15:52:36.56805] [30889] [debug] 404 Not Found (0.040798s, 24.511/s)
+[2019-03-31 18:42:37.86799] [32610] [info] Listening at "http://*:3000"
+[2019-03-31 18:43:40.65494] [308] [debug] GET "/" (7e85f479)
+[2019-03-31 18:43:40.65795] [308] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:43:40.65990] [308] [debug] Template "login/index.html.ep" not found
+[2019-03-31 18:43:40.66049] [308] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 18:43:40.66082] [308] [debug] Template "not_found.html.ep" not found
+[2019-03-31 18:43:40.66113] [308] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 18:43:40.71930] [308] [debug] 404 Not Found (0.064353s, 15.539/s)
+[2019-03-31 18:44:17.40407] [354] [info] Listening at "http://*:3000"
+[2019-03-31 18:44:24.81087] [354] [debug] GET "/" (b0ebd014)
+[2019-03-31 18:44:24.81268] [354] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:44:24.81431] [354] [debug] Template "login/index.html.ep" not found
+[2019-03-31 18:44:24.81477] [354] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 18:44:24.81507] [354] [debug] Template "not_found.html.ep" not found
+[2019-03-31 18:44:24.81535] [354] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 18:44:24.88312] [354] [debug] 404 Not Found (0.072217s, 13.847/s)
+[2019-03-31 18:44:31.69411] [354] [debug] GET "/login" (9b9e99a7)
+[2019-03-31 18:44:31.69559] [354] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 18:44:31.69598] [354] [debug] Template "not_found.html.ep" not found
+[2019-03-31 18:44:31.69621] [354] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 18:44:31.73552] [354] [debug] 404 Not Found (0.041376s, 24.169/s)
+[2019-03-31 18:44:39.63929] [354] [debug] GET "/protected" (6a1837c2)
+[2019-03-31 18:44:39.64047] [354] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:44:39.64082] [354] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:44:39.64142] [354] [debug] Template "login/protected.html.ep" not found
+[2019-03-31 18:44:39.64204] [354] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 18:44:39.64245] [354] [debug] Template "not_found.html.ep" not found
+[2019-03-31 18:44:39.64274] [354] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 18:44:39.68183] [354] [debug] 404 Not Found (0.042517s, 23.520/s)
+[2019-03-31 18:58:08.66459] [809] [info] Listening at "http://*:3000"
+[2019-03-31 18:58:21.79251] [809] [debug] GET "/" (7a1839d6)
+[2019-03-31 18:58:21.79441] [809] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:58:21.79607] [809] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 18:58:21.80577] [809] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 18:58:21.81277] [809] [debug] 200 OK (0.020225s, 49.444/s)
+[2019-03-31 18:58:28.69440] [809] [debug] GET "/" (f6e6bba1)
+[2019-03-31 18:58:28.69529] [809] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:58:28.69572] [809] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 18:58:28.69753] [809] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 18:58:28.69926] [809] [debug] 200 OK (0.00483s, 207.039/s)
+[2019-03-31 18:58:34.27370] [809] [debug] GET "/" (c8d0881e)
+[2019-03-31 18:58:34.27428] [809] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:58:34.27454] [809] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 18:58:34.27558] [809] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 18:58:34.27795] [809] [debug] 200 OK (0.004156s, 240.616/s)
+[2019-03-31 18:58:42.21933] [809] [debug] GET "/" (9acd9d2b)
+[2019-03-31 18:58:42.22013] [809] [debug] Class "Petty::Controller::Login" is not a controller
+[2019-03-31 18:58:42.22053] [809] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 18:58:42.22227] [809] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 18:58:42.22408] [809] [debug] 200 OK (0.004714s, 212.134/s)
+[2019-03-31 19:01:46.29771] [920] [info] Listening at "http://*:3000"
+[2019-03-31 19:02:01.16725] [920] [debug] GET "/" (1475271a)
+[2019-03-31 19:02:01.16998] [920] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 19:02:01.17322] [920] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 19:02:01.17816] [920] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 19:02:01.18275] [920] [debug] 200 OK (0.015472s, 64.633/s)
+[2019-03-31 19:02:07.52588] [920] [debug] GET "/" (f771fd11)
+[2019-03-31 19:02:07.52668] [920] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 19:02:07.52870] [920] [debug] 302 Found (0.0028s, 357.143/s)
+[2019-03-31 19:02:07.55870] [920] [debug] GET "/protected" (77b67823)
+[2019-03-31 19:02:07.55986] [920] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 19:02:07.56072] [920] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 19:02:07.56085] [920] [debug] Action not found in controller
+[2019-03-31 19:02:07.56137] [920] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 19:02:07.56443] [920] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 19:02:07.56626] [920] [debug] 200 OK (0.007538s, 132.661/s)
+[2019-03-31 19:02:21.72961] [920] [debug] GET "/logout" (cafa493d)
+[2019-03-31 19:02:21.73085] [920] [debug] Routing to controller "Petty::Controller::Login" and action "logout"
+[2019-03-31 19:02:21.73201] [920] [debug] 302 Found (0.002361s, 423.549/s)
+[2019-03-31 19:02:21.77046] [920] [debug] GET "/" (c5220fdc)
+[2019-03-31 19:02:21.77103] [920] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 19:02:21.77199] [920] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 19:02:21.77341] [920] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 19:02:21.77516] [920] [debug] 200 OK (0.00465s, 215.054/s)
+[2019-03-31 19:02:27.80838] [920] [debug] GET "/" (0c49a0cf)
+[2019-03-31 19:02:27.80921] [920] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 19:02:27.81054] [920] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 19:02:27.81215] [920] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 19:02:27.81404] [920] [debug] 200 OK (0.005624s, 177.809/s)
+[2019-03-31 21:34:40.50213] [3844] [info] Listening at "http://*:3000"
+[2019-03-31 21:34:59.75715] [3844] [debug] GET "/" (f983de89)
+[2019-03-31 21:34:59.76000] [3844] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:34:59.76355] [3844] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 21:34:59.77280] [3844] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 21:34:59.77834] [3844] [debug] 200 OK (0.02116s, 47.259/s)
+[2019-03-31 21:35:06.67855] [3844] [debug] GET "/" (3fc62eb3)
+[2019-03-31 21:35:06.67935] [3844] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:35:06.68132] [3844] [debug] 302 Found (0.002719s, 367.782/s)
+[2019-03-31 21:35:06.78837] [3844] [debug] GET "/protected" (66cc51db)
+[2019-03-31 21:35:06.78951] [3844] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 21:35:06.79043] [3844] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 21:35:06.79058] [3844] [debug] Action not found in controller
+[2019-03-31 21:35:06.79111] [3844] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 21:35:06.79451] [3844] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 21:35:06.79580] [3844] [debug] 200 OK (0.007411s, 134.935/s)
+[2019-03-31 21:35:09.92333] [3844] [debug] GET "/" (fdfb9c23)
+[2019-03-31 21:35:09.92395] [3844] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:35:09.92495] [3844] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 21:35:09.92677] [3844] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 21:35:09.92856] [3844] [debug] 200 OK (0.005188s, 192.753/s)
+[2019-03-31 21:35:16.45880] [3844] [debug] GET "/yancy" (3cb9e324)
+[2019-03-31 21:35:16.46468] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "index"
+[2019-03-31 21:35:16.46494] [3844] [debug] Action not found in controller
+[2019-03-31 21:35:16.46546] [3844] [debug] Rendering template "yancy/index.html.ep"
+[2019-03-31 21:35:16.49429] [3844] [debug] Rendering template "layouts/yancy.html.ep"
+[2019-03-31 21:35:16.50168] [3844] [debug] 200 OK (0.042851s, 23.337/s)
+[2019-03-31 21:35:17.14372] [3844] [debug] GET "/yancy/api" (0e0e8469)
+[2019-03-31 21:35:17.14472] [3844] [debug] Routing to a callback
+[2019-03-31 21:35:17.15177] [3844] [debug] 200 OK (0.008001s, 124.984/s)
+[2019-03-31 21:35:17.21956] [3844] [debug] GET "/yancy/api/pages" (7f562633)
+[2019-03-31 21:35:17.22261] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "list_items"
+[2019-03-31 21:35:17.75297] [3844] [debug] 200 OK (0.533343s, 1.875/s)
+[2019-03-31 21:35:29.91525] [3844] [debug] GET "/yanciness" (253914cb)
+[2019-03-31 21:35:29.91691] [3844] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:35:29.91740] [3844] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:35:29.91778] [3844] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 21:35:29.98894] [3844] [debug] 404 Not Found (0.07366s, 13.576/s)
+[2019-03-31 21:35:34.69970] [3844] [debug] GET "/yanciness/index" (f61be591)
+[2019-03-31 21:35:34.70078] [3844] [debug] Routing to a callback
+[2019-03-31 21:35:34.70151] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:35:34.70170] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:35:49.69762] [3844] [debug] Inactivity timeout
+[2019-03-31 21:35:49.70295] [3844] [debug] GET "/yanciness/index" (add934d5)
+[2019-03-31 21:35:49.70355] [3844] [debug] Routing to a callback
+[2019-03-31 21:35:49.70422] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:35:49.70442] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:35:54.13298] [3844] [debug] GET "/yanciness/1" (62f84cff)
+[2019-03-31 21:35:54.13383] [3844] [debug] Routing to a callback
+[2019-03-31 21:35:54.13439] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:35:54.13454] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:36:09.13200] [3844] [debug] Inactivity timeout
+[2019-03-31 21:36:09.13776] [3844] [debug] GET "/yanciness/1" (e9c2eed3)
+[2019-03-31 21:36:09.13835] [3844] [debug] Routing to a callback
+[2019-03-31 21:36:09.13896] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:36:09.13914] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:36:17.85505] [3844] [debug] GET "/yancy/api/pagest/1" (4fb18693)
+[2019-03-31 21:36:17.85775] [3844] [debug] 404 Not Found (0.002666s, 375.094/s)
+[2019-03-31 21:36:34.82149] [3844] [debug] GET "/index" (abc54051)
+[2019-03-31 21:36:34.82290] [3844] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:36:34.82337] [3844] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:36:34.82367] [3844] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 21:36:34.86890] [3844] [debug] 404 Not Found (0.047372s, 21.110/s)
+[2019-03-31 21:36:56.77129] [3844] [debug] GET "/yancy/api/pages" (0471820e)
+[2019-03-31 21:36:56.77418] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "list_items"
+[2019-03-31 21:36:56.78843] [3844] [debug] 200 OK (0.017079s, 58.551/s)
+[2019-03-31 21:37:35.23644] [3844] [debug] GET "/yancy/api/pages/1" (4eef8484)
+[2019-03-31 21:37:35.23898] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "get_item"
+[2019-03-31 21:37:35.24596] [3844] [warn] OpenAPI >>> GET /yancy/api/pages/1 [{"message":"Missing property.","path":"\/path"}]
+[2019-03-31 21:37:35.24655] [3844] [debug] 500 Internal Server Error (0.010087s, 99.138/s)
+[2019-03-31 21:37:46.22480] [3844] [debug] GET "/yancy/api/pages/1id" (91c40b79)
+[2019-03-31 21:37:46.23567] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "get_item"
+[2019-03-31 21:37:46.24690] [3844] [warn] OpenAPI >>> GET /yancy/api/pages/1id [{"message":"Missing property.","path":"\/path"}]
+[2019-03-31 21:37:46.24740] [3844] [debug] 500 Internal Server Error (0.022604s, 44.240/s)
+[2019-03-31 21:38:55.68632] [3844] [debug] GET "/yancy" (97e6a12a)
+[2019-03-31 21:38:55.68835] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "index"
+[2019-03-31 21:38:55.68853] [3844] [debug] Action not found in controller
+[2019-03-31 21:38:55.68883] [3844] [debug] Rendering cached template "yancy/index.html.ep"
+[2019-03-31 21:38:55.69080] [3844] [debug] Rendering cached template "layouts/yancy.html.ep"
+[2019-03-31 21:38:55.69377] [3844] [debug] 200 OK (0.007395s, 135.227/s)
+[2019-03-31 21:38:56.33304] [3844] [debug] GET "/yancy/api" (30eedaf0)
+[2019-03-31 21:38:56.33360] [3844] [debug] Routing to a callback
+[2019-03-31 21:38:56.34068] [3844] [debug] 200 OK (0.007587s, 131.804/s)
+[2019-03-31 21:38:56.41150] [3844] [debug] GET "/yancy/api/pages" (2bab7f1c)
+[2019-03-31 21:38:56.41549] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "list_items"
+[2019-03-31 21:38:56.43517] [3844] [debug] 200 OK (0.023627s, 42.324/s)
+[2019-03-31 21:39:33.42249] [3844] [debug] GET "/yancy/api/pages/index" (cca17517)
+[2019-03-31 21:39:33.42600] [3844] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "get_item"
+[2019-03-31 21:39:33.43485] [3844] [debug] 200 OK (0.012312s, 81.222/s)
+[2019-03-31 21:40:52.78891] [3844] [debug] GET "/yanciness/index" (de837c9b)
+[2019-03-31 21:40:52.78951] [3844] [debug] Routing to a callback
+[2019-03-31 21:40:52.79015] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:40:52.79030] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:41:07.78642] [3844] [debug] Inactivity timeout
+[2019-03-31 21:41:07.79155] [3844] [debug] GET "/yanciness/index" (8ea67eb3)
+[2019-03-31 21:41:07.79211] [3844] [debug] Routing to a callback
+[2019-03-31 21:41:07.79272] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:41:07.79290] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:41:22.78937] [3844] [debug] Inactivity timeout
+[2019-03-31 21:41:22.79552] [3844] [debug] GET "/yanciness/index" (faa8b747)
+[2019-03-31 21:41:22.79599] [3844] [debug] Routing to a callback
+[2019-03-31 21:41:22.79651] [3844] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:41:22.79666] [3844] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:43:05.43277] [4135] [info] Listening at "http://*:3000"
+[2019-03-31 21:43:18.99249] [4135] [debug] GET "/yanciness/index" (021acf0c)
+[2019-03-31 21:43:18.99392] [4135] [debug] Routing to a callback
+[2019-03-31 21:43:18.99592] [4135] [debug] Template "yancinessid.html.ep" not found
+[2019-03-31 21:43:18.99614] [4135] [debug] Nothing has been rendered, expecting delayed response
+[2019-03-31 21:43:25.45696] [4135] [debug] GET "/yanciness/" (87e8c33f)
+[2019-03-31 21:43:25.45908] [4135] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:43:25.45965] [4135] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:43:25.46008] [4135] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 21:43:25.49312] [4135] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 21:43:25.52342] [4135] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 21:43:25.52786] [4135] [debug] 404 Not Found (0.070863s, 14.112/s)
+[2019-03-31 21:43:37.69529] [4135] [debug] GET "/" (7c57e3f2)
+[2019-03-31 21:43:37.69820] [4135] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:43:37.69954] [4135] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 21:43:37.70321] [4135] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 21:43:37.70429] [4135] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 21:43:37.71046] [4135] [debug] 200 OK (0.015135s, 66.072/s)
+[2019-03-31 21:44:01.79953] [4135] [debug] GET "/" (84976fce)
+[2019-03-31 21:44:01.80137] [4135] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:44:01.80260] [4135] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 21:44:01.80289] [4135] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 21:44:01.80351] [4135] [debug] 302 Found (0.003959s, 252.589/s)
+[2019-03-31 21:44:01.90526] [4135] [debug] GET "/protected" (48e32278)
+[2019-03-31 21:44:01.90629] [4135] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 21:44:01.90713] [4135] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 21:44:01.90727] [4135] [debug] Action not found in controller
+[2019-03-31 21:44:01.90779] [4135] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 21:44:01.91093] [4135] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 21:44:01.91285] [4135] [debug] 200 OK (0.007546s, 132.521/s)
+[2019-03-31 21:44:04.78098] [4135] [debug] GET "/" (4d15cb5f)
+[2019-03-31 21:44:04.78155] [4135] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 21:44:04.78248] [4135] [debug] Rendering cached template "login/index.html.ep"
+[2019-03-31 21:44:04.78407] [4135] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 21:44:04.78579] [4135] [debug] 200 OK (0.004764s, 209.908/s)
+[2019-03-31 21:44:10.30759] [4135] [debug] GET "/index" (6628f32b)
+[2019-03-31 21:44:10.30892] [4135] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:44:10.30938] [4135] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:44:10.30967] [4135] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 21:44:10.34996] [4135] [debug] 404 Not Found (0.042282s, 23.651/s)
+[2019-03-31 21:44:18.35908] [4135] [debug] GET "/yancy/index" (41f4c5a6)
+[2019-03-31 21:44:18.36023] [4135] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:44:18.36060] [4135] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:44:18.36076] [4135] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 21:44:18.40028] [4135] [debug] 404 Not Found (0.041156s, 24.298/s)
+[2019-03-31 21:44:28.21423] [4135] [debug] GET "/yancy/pages/index" (c93c29c7)
+[2019-03-31 21:44:28.21558] [4135] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 21:44:28.21600] [4135] [debug] Template "not_found.html.ep" not found
+[2019-03-31 21:44:28.21624] [4135] [debug] Rendering cached template "mojo/debug.html.ep"
+[2019-03-31 21:44:28.25496] [4135] [debug] 404 Not Found (0.040699s, 24.571/s)
+[2019-03-31 21:44:35.90450] [4135] [debug] GET "/yancy/api/pages/index" (048cf8fd)
+[2019-03-31 21:44:35.91166] [4135] [debug] Routing to controller "Yancy::Controller::Yancy::API" and action "get_item"
+[2019-03-31 21:44:35.92255] [4135] [debug] 200 OK (0.018003s, 55.546/s)
+[2019-03-31 22:24:24.06381] [4817] [info] Listening at "http://*:3000"
+[2019-03-31 22:24:47.76862] [4914] [info] Listening at "http://*:3000"
+[2019-03-31 22:25:00.24796] [4914] [debug] GET "/login" (3c79d338)
+[2019-03-31 22:25:00.25113] [4914] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 22:25:00.25164] [4914] [debug] Template "not_found.html.ep" not found
+[2019-03-31 22:25:00.25198] [4914] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 22:25:00.28399] [4914] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:25:00.31473] [4914] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:25:00.31841] [4914] [debug] 404 Not Found (0.070441s, 14.196/s)
+[2019-03-31 22:25:05.70721] [4914] [debug] GET "/" (c4366094)
+[2019-03-31 22:25:05.71062] [4914] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:25:05.71201] [4914] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 22:25:05.71569] [4914] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:25:05.71678] [4914] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 22:25:05.72271] [4914] [debug] 200 OK (0.015477s, 64.612/s)
+[2019-03-31 22:25:15.56621] [4914] [debug] GET "/" (fcb938f8)
+[2019-03-31 22:25:15.56691] [4914] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:25:15.56803] [4914] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:25:15.63980] [4914] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:25:15.64093] [4914] [debug] 302 Found (0.074667s, 13.393/s)
+[2019-03-31 22:25:15.74903] [4914] [debug] GET "/protected" (c9753161)
+[2019-03-31 22:25:15.75005] [4914] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 22:25:15.75092] [4914] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 22:25:15.75107] [4914] [debug] Action not found in controller
+[2019-03-31 22:25:15.75160] [4914] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 22:25:15.75478] [4914] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 22:25:15.75665] [4914] [debug] 200 OK (0.007585s, 131.839/s)
+[2019-03-31 22:30:24.41797] [5021] [info] Listening at "http://*:3000"
+[2019-03-31 22:30:32.64381] [5021] [debug] GET "/login" (e85f4034)
+[2019-03-31 22:30:32.64703] [5021] [debug] Template "not_found.development.html.ep" not found
+[2019-03-31 22:30:32.64752] [5021] [debug] Template "not_found.html.ep" not found
+[2019-03-31 22:30:32.64784] [5021] [debug] Rendering template "mojo/debug.html.ep"
+[2019-03-31 22:30:32.67927] [5021] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:30:32.71027] [5021] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:30:32.71390] [5021] [debug] 404 Not Found (0.070042s, 14.277/s)
+[2019-03-31 22:30:41.24565] [5021] [debug] GET "/" (8c7d3b2a)
+[2019-03-31 22:30:41.24770] [5021] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:30:41.24874] [5021] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 22:30:41.25175] [5021] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:30:41.25273] [5021] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 22:30:41.25823] [5021] [debug] 200 OK (0.012542s, 79.732/s)
+[2019-03-31 22:30:48.10663] [5021] [debug] GET "/" (2143c284)
+[2019-03-31 22:30:48.10745] [5021] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:30:48.10991] [5021] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:30:48.11184] [5021] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:30:48.11256] [5021] [debug] 302 Found (0.00591s, 169.205/s)
+[2019-03-31 22:30:48.21618] [5021] [debug] GET "/protected" (7c96ecae)
+[2019-03-31 22:30:48.21730] [5021] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 22:30:48.21836] [5021] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 22:30:48.21853] [5021] [debug] Action not found in controller
+[2019-03-31 22:30:48.21901] [5021] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 22:30:48.22172] [5021] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 22:30:48.22340] [5021] [debug] 200 OK (0.007192s, 139.043/s)
+[2019-03-31 22:31:29.36599] [5087] [info] Listening at "http://*:3000"
+[2019-03-31 22:31:36.06178] [5087] [debug] GET "/" (9058fac2)
+[2019-03-31 22:31:36.06510] [5087] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:31:36.06794] [5087] [debug] Rendering template "login/index.html.ep"
+[2019-03-31 22:31:36.07176] [5087] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:31:36.07323] [5087] [debug] Rendering template "layouts/default.html.ep"
+[2019-03-31 22:31:36.07878] [5087] [debug] 200 OK (0.016974s, 58.914/s)
+[2019-03-31 22:31:43.58579] [5087] [debug] GET "/" (9402bf03)
+[2019-03-31 22:31:43.58647] [5087] [debug] Routing to controller "Petty::Controller::Login" and action "index"
+[2019-03-31 22:31:43.58747] [5087] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:31:43.58772] [5087] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:31:43.58807] [5087] [debug] Cookie "mojolicious" has a bad signature
+[2019-03-31 22:31:43.58867] [5087] [debug] 302 Found (0.002847s, 351.247/s)
+[2019-03-31 22:31:43.69157] [5087] [debug] GET "/protected" (21de5d28)
+[2019-03-31 22:31:43.69263] [5087] [debug] Routing to controller "Petty::Controller::Login" and action "logged_in"
+[2019-03-31 22:31:43.69342] [5087] [debug] Routing to controller "Petty::Controller::Login" and action "protected"
+[2019-03-31 22:31:43.69355] [5087] [debug] Action not found in controller
+[2019-03-31 22:31:43.69408] [5087] [debug] Rendering template "login/protected.html.ep"
+[2019-03-31 22:31:43.69706] [5087] [debug] Rendering cached template "layouts/default.html.ep"
+[2019-03-31 22:31:43.69870] [5087] [debug] 200 OK (0.007089s, 141.064/s)

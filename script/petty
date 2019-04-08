@@ -1,0 +1,26 @@
+#!/usr/bin/env perl
+
+use Mojo::Base -base;
+use Mojo::File qw/path/;
+use lib path(__FILE__)->dirname() . '/lib';
+
+use FindBin;
+BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
+
+use Mojolicious::Commands;
+
+# Documentation browser under "/perldoc"
+# plugin 'PODRenderer';
+
+Mojolicious::Commands->start_app('Petty');
+
+__DATA__
+
+@@ migrations
+-- 1 up
+CREATE TABLE IF NOT EXISTS pages (
+    id SERIAL PRIMARY KEY,
+    path VARCHAR(250) UNIQUE NOT NULL,
+    markdown TEXT,
+    html TEXT
+);
